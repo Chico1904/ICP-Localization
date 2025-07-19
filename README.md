@@ -17,7 +17,7 @@ This repository performs localization using ICP (PCL library).
 
 #### **Build and debug Commands**
 
-``` colcon build --symlink-install --packages-skip usb_cam ```
+``` colcon build --symlink-install```
 
 ``` source install/setup.bash ```
 
