@@ -3,9 +3,9 @@
 This repository performs localization using ICP (PCL library).
 
 ## Usage
-#### **Rosbag commands (subsitute 1 by rosbag index)**
+#### **Rosbag commands (subsitute 1 by rosbag index)** lidar_dynamic_01
 
-``` ros2 bag play --read-ahead-queue-size 100 -l -r 1.0 --clock 100 --start-paused ~/aREPO/robp_group3/robp_ws/bag/lidar_dynamic_01/lidar_dynamic_01.mcap ```
+``` ros2 bag play --read-ahead-queue-size 100 -l -r 1.0 --clock 100 --start-paused ~/"Personal Projects"/ICP-Localization/bags/lidar_dynamic_01/lidar_dynamic_01.mcap ```
 
 ``` ros2 launch robp_launch localization_icp_launch.py ```
 
