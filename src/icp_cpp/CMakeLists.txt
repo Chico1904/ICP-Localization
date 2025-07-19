@@ -29,7 +29,7 @@ include_directories(/opt/ros/jazzy/include/tf2_eigen)
 include_directories(${tf2_eigen_INCLUDE_DIRS})
 
 # Create an executable
-add_executable(icp_node src/icp_node.cpp)
+add_executable(icp_node icp_cpp/icp_node.cpp)
 
 # Link dependencies to the executable
 ament_target_dependencies(icp_node
