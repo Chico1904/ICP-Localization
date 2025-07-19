@@ -1,17 +1,14 @@
 # ICP-Localization
 ## Overview
-This repository performs localization using ICP (PCL library).
+This repository implements localization using the Iterative Closest Point (ICP) algorithm from the Point Cloud Library (PCL). The rosbags were recorded as part of the course DD2419 Project Course in Robotics and Autonomous Systems. For the record, **it's far from being flawless**.
+
+## Requirements
+- ROS2: Jazzy
 
 ## Usage
 #### **Rosbag commands (subsitute 1 by rosbag index)** lidar_dynamic_01
 
-``` ros2 bag play --read-ahead-queue-size 100 -l -r 1.0 --clock 100 --start-paused ~/"Personal Projects"/ICP-Localization/bags/lidar_dynamic_01/lidar_dynamic_01.mcap ```
-
-``` ros2 launch robp_launch localization_icp_launch.py ```
-
-#### **Commands to run when it's working**
-
-``` fastdds discovery -i 0 -t 192.168.128.107 -q 42100 ```
+``` ros2 bag play --read-ahead-queue-size 100 -l -r 1.0 --clock 100 --start-paused ~/<INSERT PATH>/bags/lidar_dynamic_01/lidar_dynamic_01.mcap ```
 
 ``` ros2 launch robp_launch localization_icp_launch.py ```
 
@@ -20,7 +17,6 @@ This repository performs localization using ICP (PCL library).
 ``` colcon build --symlink-install```
 
 ``` source install/setup.bash ```
-
 
 ``` ros2 run tf2_ros tf2_echo odom map ```
 
